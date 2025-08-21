@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My First Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="/">MySite</a>
+      <button id="menuBtn" aria-label="Toggle menu">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Hello, world 👋</h1>
+      <p>Welcome to my first website. It’s fast, responsive, and simple.</p>
+      <a class="btn" href="#work">See my work</a>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m learning to build websites. This page is pure HTML/CSS/JS.</p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <div class="grid">
+        <article class="card"><h3>Project A</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Project B</h3><p>Short blurb.</p></article>
+        <article class="card"><h3>Project C</h3><p>Short blurb.</p></article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label>Name <input required placeholder="Your name" /></label>
+        <label>Email <input type="email" required placeholder="you@example.com" /></label>
+        <label>Message <textarea required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> MySite</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
